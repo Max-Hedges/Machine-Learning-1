@@ -48,3 +48,16 @@ print(dataset.groupby("class").size())
 print()
 print()
 
+
+#VISUALISING THE DATA
+#putting data into box plots
+dataset.plot(kind="box", subplots=True, layout=(2,2), sharex=False, sharey=False)
+pyplot.show()
+
+#putting data into histograms
+dataset.hist()
+pyplot.show()
+
+#putting data into scatter plot matrix
+scatter_matrix(dataset)
+pyplot.show()
