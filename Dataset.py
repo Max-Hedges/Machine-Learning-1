@@ -26,3 +26,25 @@ names = ["sepal-length","sepal-width","petal-length","petal-width","class"]
 dataset = read_csv(url, names=names)
 
 
+#SHOWING THE DATA
+
+#shows the rows and columns of the dataset (150,5)
+print(dataset.shape)
+print()
+print()
+
+#shows the first 20 lines of data
+print(dataset.head(20))
+print()
+print()
+
+#shows some numerics for the data such as the count, mean, min and max values
+print(dataset.describe())
+print()
+print()
+
+#shows the number of instances that belong to each class (e.g. Iris-setosa 50)
+print(dataset.groupby("class").size())
+print()
+print()
+
